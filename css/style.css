@@ -1,0 +1,91 @@
+.container {
+  max-width: 600px;
+  margin: 80px auto;
+}
+
+.clock-body {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px 3px 9px;
+  border-radius: 10px;
+  padding: 40px 50px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+body {
+  font-size: 18px;
+  font-family: "Exo 2", sans-serif;
+  background: linear-gradient(
+      179.4deg,
+      rgb(253, 240, 233) 2.2%,
+      rgb(255, 194, 203) 96.2%
+    )
+    no-repeat center center fixed;
+  background-size: cover;
+  color: #282c46;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: 10px 0 30px;
+  font-weight: bold;
+}
+
+h2 {
+  margin: 0 0 5px;
+  font-size: 30px;
+}
+
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  border-color: gray;
+  font-family: "Exo 2", sans-serif;
+  background-color: #fff9f6;
+  color: #282c46;
+}
+
+select:focus {
+  outline: none;
+}
+
+.city {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+}
+
+.city:last-child {
+  border: none;
+}
+
+.date {
+  opacity: 0.8;
+}
+.time {
+  font-size: 48px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time small {
+  font-size: 24px;
+}
+
+footer {
+  text-align: center;
+  margin: 20px auto;
+}
+
+footer a {
+  color: #282c46;
+}
+
+footer a:hover {
+  color: #282c46;
+}
