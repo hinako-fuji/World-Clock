@@ -24,35 +24,37 @@
       <div class="clock-body">
         <h1>World Clock <i class="fa-regular fa-clock"></i></h1>
 
-        <select name="" id="cities">
+        <select name="" id="select-city">
           <option value="">Select a city...</option>
-          <option value="">Paris</option>
-          <option value="">Sydney</option>
-          <option value="">Los Angeles</option>
+          <option value="Europe/Paris">Paris</option>
+          <option value="Australia/Sydney">Sydney</option>
+          <option value="America/Los_Angeles">Los Angeles</option>
         </select>
 
-        <div class="city" id="london">
-          <div>
-            <h2>London <span class="flagmoji">🇬🇧</span></h2>
+        <div id="cities">
+          <div class="city" id="london">
+            <div>
+              <h2>London</h2>
 
-            <div class="date"></div>
-          </div>
+              <div class="date"></div>
+            </div>
 
-          <div class="time"></div>
-        </div>
-        <div class="city" id="tokyo">
-          <div>
-            <h2>Tokyo <span class="flagmoji">🇯🇵</span></h2>
-            <div class="date"></div>
+            <div class="time"></div>
           </div>
-          <div class="time"></div>
-        </div>
-        <div class="city" id="new-york">
-          <div>
-            <h2>New York <span class="flagmoji">🇺🇸</span></h2>
-            <div class="date"></div>
+          <div class="city" id="tokyo">
+            <div>
+              <h2>Tokyo</h2>
+              <div class="date"></div>
+            </div>
+            <div class="time"></div>
           </div>
-          <div class="time"></div>
+          <div class="city" id="new-york">
+            <div>
+              <h2>New York</h2>
+              <div class="date"></div>
+            </div>
+            <div class="time"></div>
+          </div>
         </div>
       </div>
 
