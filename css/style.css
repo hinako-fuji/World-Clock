@@ -3,8 +3,21 @@
   margin: 80px auto;
 }
 
+body {
+  font-size: 18px;
+  font-family: "Exo 2", sans-serif;
+  background: linear-gradient(
+      179.4deg,
+      rgb(253, 240, 233) 2.2%,
+      rgb(255, 194, 203) 96.2%
+    )
+    no-repeat center center fixed;
+  background-size: cover;
+  color: #282c46;
+}
+
 .clock-body {
-  box-shadow: rgba(236, 166, 166, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(236, 166, 166, 0.3) 0px 2px 8px 0px;
   border-radius: 10px;
   padding: 20px 40px 30px;
   background-color: rgba(255, 255, 255, 0.7);
@@ -21,19 +34,6 @@
   border: none;
   transition: all 200ms ease-in-out;
   cursor: pointer;
-}
-
-body {
-  font-size: 18px;
-  font-family: "Exo 2", sans-serif;
-  background: linear-gradient(
-      179.4deg,
-      rgb(253, 240, 233) 2.2%,
-      rgb(255, 194, 203) 96.2%
-    )
-    no-repeat center center fixed;
-  background-size: cover;
-  color: #282c46;
 }
 
 h1 {
@@ -108,6 +108,7 @@ footer {
 
 footer a {
   color: #282c46;
+  transition: all 200ms ease-in-out;
 }
 
 footer a:hover {
