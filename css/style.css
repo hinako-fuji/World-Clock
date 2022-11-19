@@ -6,8 +6,21 @@
 .clock-body {
   box-shadow: rgba(0, 0, 0, 0.17) 0px 3px 9px;
   border-radius: 10px;
-  padding: 40px 50px;
-  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px 40px 30px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.theme-button {
+  background: #282c46;
+  margin: 0 0 0 auto;
+  color: #eca6a6;
+  display: block;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  border: none;
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
 }
 
 body {
@@ -26,8 +39,9 @@ body {
 h1 {
   font-size: 40px;
   text-align: center;
-  margin: 10px 0 30px;
+  margin: 0 0 30px;
   font-weight: bold;
+  color: #eca6a6;
 }
 
 h2 {
@@ -41,9 +55,9 @@ select {
   padding: 10px;
   border-radius: 5px;
   font-size: 18px;
-  border-color: gray;
+  border-color: #eca6a6;
   font-family: "Exo 2", sans-serif;
-  background-color: #fff9f6;
+  background-color: #ffeeee;
   color: #282c46;
 }
 
@@ -55,7 +69,8 @@ select:focus {
   display: flex;
   justify-content: space-between;
   padding: 30px 0;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dashed #eca6a6;
+  margin: 10px 0;
 }
 
 .city:last-child {
@@ -65,16 +80,25 @@ select:focus {
 .date {
   opacity: 0.8;
 }
+
 .time {
   font-size: 48px;
-  font-weight: 500;
+  font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Inconsolata", monospace;
 }
 
 .time small {
   font-size: 24px;
+  font-family: "Exo 2", sans-serif;
+  font-weight: 500;
+}
+
+.default-link {
+  color: #eca6a6;
+  text-decoration: none;
 }
 
 footer {
@@ -87,5 +111,80 @@ footer a {
 }
 
 footer a:hover {
+  opacity: 0.9;
+}
+
+.dark {
+  background: linear-gradient(
+      179.4deg,
+      rgb(33, 53, 113) 2.2%,
+      rgb(13, 21, 45) 96.2%
+    )
+    no-repeat center center fixed;
+  background-size: cover;
+  color: #eca6a6;
+}
+
+.dark .clock-body {
+  background-color: #142044;
+}
+
+.dark .theme-button {
+  background: #eca6a6;
   color: #282c46;
+}
+
+.dark footer a {
+  color: #eca6a6;
+}
+
+.dark select {
+  color: #eca6a6;
+  background: #142044;
+}
+
+.dark .default-link {
+  opacity: 0.8;
+}
+
+.dark .city {
+  border-bottom: 1px dashed rgb(236, 167, 167, 0.7);
+}
+
+.dark .city:last-child {
+  border: none;
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin: 50px auto;
+  }
+
+  .clock-body {
+    padding: 20px 20px 30px;
+  }
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .date {
+    font-size: 15px;
+  }
+
+  .time {
+    font-size: 38px;
+  }
+
+  .time small {
+    font-size: 20px;
+  }
+
+  footer {
+    font-size: 15px;
+  }
 }

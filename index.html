@@ -8,7 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;600&display=swap"
       rel="stylesheet"
     />
     <script
@@ -22,14 +27,25 @@
   <body>
     <div class="container">
       <div class="clock-body">
-        <h1>World Clock <i class="fa-regular fa-clock"></i></h1>
+        <button class="theme-button" id="theme-button">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <h1>World Clock</h1>
 
         <select name="" id="select-city">
           <option value="">Select a city...</option>
           <option value="current">Current Location</option>
-          <option value="Europe/Paris">Paris</option>
+          <option value="Pacific/Auckland">Auckland</option>
           <option value="Australia/Sydney">Sydney</option>
+          <option value="Asia/Hong_Kong">Hong Kong</option>
+          <option value="Indian/Maldives">Maldives</option>
+          <option value="Asia/Dubai">Dubai</option>
+          <option value="Africa/Cairo">Cairo</option>
+          <option value="Europe/Paris">Paris</option>
+          <option value="America/Cancun">Cancun</option>
           <option value="America/Los_Angeles">Los Angeles</option>
+          <option value="Pacific/Honolulu">Honolulu</option>
         </select>
 
         <div id="cities">
