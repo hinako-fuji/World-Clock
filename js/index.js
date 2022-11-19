@@ -58,7 +58,7 @@ function updateCity(event) {
               "h:mm:ss"
             )}<small>&nbsp;${cityTime.format("A")}</small></div>
             </div>
-            <a href="#" onclick="window.location.reload()" class= "default-link"> <i class="fa-solid fa-arrow-rotate-right"></i> Defalut cities</a>`;
+            <a href="/" class= "default-link"> <i class="fa-solid fa-arrow-rotate-right"></i> Defalut cities</a>`;
   }
   updateTimeForSelectedCity();
   setInterval(updateTimeForSelectedCity, 1000);
@@ -77,7 +77,6 @@ function changeTheme() {
   } else {
     body.classList.add("dark");
     themeButton.innerHTML = `<i class="fa-solid fa-lightbulb"></i>`;
-    body.classList.add("dark");
   }
 }
 
